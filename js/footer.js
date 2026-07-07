@@ -40,7 +40,6 @@
     + '  </div>'
     + '  <div class="footer-bottom">'
     + '    <span>&copy; <span data-year></span> Better Bioinformatics. An independent, community-run seminar series.</span>'
-    + '    <span>Not affiliated with any university or institution.</span>'
     + '  </div>'
     + '</div>';
 
