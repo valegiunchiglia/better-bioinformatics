@@ -84,10 +84,22 @@
   });
 
   // ---- Materials modals (resources.html) ----
-  document.querySelectorAll("[data-open-modal]").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      var dialog = document.getElementById(btn.getAttribute("data-open-modal"));
+  // Trigger can be a whole clickable row: ignore clicks on links inside it
+  // (e.g. "Download slides") so they behave normally instead of also opening the modal.
+  document.querySelectorAll("[data-open-modal]").forEach(function (trigger) {
+    function openIt() {
+      var dialog = document.getElementById(trigger.getAttribute("data-open-modal"));
       if (dialog) dialog.showModal();
+    }
+    trigger.addEventListener("click", function (e) {
+      if (e.target.closest("a")) return;
+      openIt();
+    });
+    trigger.addEventListener("keydown", function (e) {
+      if ((e.key === "Enter" || e.key === " ") && !e.target.closest("a")) {
+        e.preventDefault();
+        openIt();
+      }
     });
   });
   document.querySelectorAll("[data-close-modal]").forEach(function (btn) {
