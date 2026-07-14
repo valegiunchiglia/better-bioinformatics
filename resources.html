@@ -11,9 +11,10 @@
 <body>
 <!--
   HOW TO ADD MATERIALS FOR A NEW TALK
-  1. Drop the slide file into assets/slides/ (name it <speaker-slug>.pdf or .pptx).
-  2. Copy one of the <article class="resource-card"> blocks below and update the
-     name, talk link, slides href, and the reading/tools lists.
+  1. Drop the slide deck (as a PDF) into assets/slides/ named <speaker-slug>.pdf
+  2. Copy one <article class="resource-card-compact"> block AND its matching
+     <dialog class="materials-modal"> block, then update the name, talk link,
+     slides href, and the reading/tools lists inside the dialog.
 -->
 
 <header class="site-header">
@@ -56,118 +57,154 @@
       Shared with each speaker's permission. Not every talk has materials up yet: some speakers are still sending things over, and we add them as they arrive.
     </div>
 
-    <article class="resource-card" id="naveed-ishaque">
-      <div class="resource-head">
-        <div>
-          <h3>Dr Naveed Ishaque</h3>
-          <p class="resource-talk"><a href="speakers.html#naveed-ishaque">"Making sense of cells in space: challenges in interpreting spatial transcriptomics data"</a> · 7 July 2026</p>
+    <div class="grid-3">
+
+      <article class="resource-card-compact">
+        <h3>Dr Naveed Ishaque</h3>
+        <p class="resource-talk-compact"><a href="speakers.html#naveed-ishaque">"Making sense of cells in space"</a> · 7 July 2026</p>
+        <div class="resource-card-actions">
+          <a class="btn btn-primary btn-sm" href="assets/slides/naveed-ishaque.pdf" target="_blank" rel="noopener">Download slides</a>
+          <button type="button" class="btn btn-outline btn-sm" data-open-modal="materials-naveed-ishaque">See materials</button>
         </div>
-        <a class="btn btn-primary btn-sm" href="assets/slides/naveed-ishaque.pdf" target="_blank" rel="noopener">Download slides</a>
-      </div>
+      </article>
 
-      <div class="resource-section">
-        <h4>Recommended reading</h4>
-        <ul>
-          <li>
-            <a href="https://www.nature.com/articles/s41592-023-02151-z" target="_blank" rel="noopener">Metrics reloaded</a>
-            <span class="desc">A review of how metrics should be used and interpreted. Not covered directly in the talk, but well worth reading.</span>
-          </li>
-          <li>
-            <a href="https://www.biorxiv.org/content/10.1101/2025.06.23.660861v2" target="_blank" rel="noopener">Beyond benchmarking</a>
-            <span class="desc">Naveed's group on the issues with methods, data, ground truths, and metrics when benchmarking spatial transcriptomics tools. Due to be peer-reviewed soon.</span>
-          </li>
-          <li>
-            <a href="https://arxiv.org/abs/2606.09675" target="_blank" rel="noopener">Challenges and prospects for cell segmentation in spatial transcriptomics</a>
-            <span class="desc">A perspectives piece on the current landscape of tools and open problems, and where the field is heading. Part of the Human Cell Atlas.</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="resource-section">
-        <h4>Tools mentioned</h4>
-        <ul>
-          <li>
-            <a href="https://www.nature.com/articles/s41467-021-23807-4" target="_blank" rel="noopener">SSAM</a>
-            <span class="desc">An early cell-segmentation-free analysis tool that generates cell-type maps. Not fast enough for current technologies.</span>
-          </li>
-          <li>
-            <a href="https://sainsc.readthedocs.io/stable/" target="_blank" rel="noopener">Sainsc</a>
-            <span class="desc">An improved, faster cell-segmentation-free analysis tool from the same group.</span>
-          </li>
-          <li>
-            <a href="https://www.nature.com/articles/s41592-024-02415-2" target="_blank" rel="noopener">FICTURE</a>
-            <span class="desc">Another cell-segmentation-free tool, focused on gene expression programs and factors rather than cell typing.</span>
-          </li>
-          <li>
-            <a href="https://www.nature.com/articles/s41587-026-03004-8" target="_blank" rel="noopener">ovrl.py</a>
-            <span class="desc">Detects cell overlap signals (vertical doublets) in spatial transcriptomics data.</span>
-          </li>
-          <li>
-            <a href="https://www.nature.com/articles/s41588-025-02497-4" target="_blank" rel="noopener">CellAdMix</a>
-            <span class="desc">Identifies and corrects transcript misassignment.</span>
-          </li>
-          <li>
-            <a href="https://www.nature.com/articles/s41592-026-03089-8" target="_blank" rel="noopener">SPLIT</a>
-            <span class="desc">Improves transcript assignment to cells by resolving mixed signals.</span>
-          </li>
-          <li>
-            <a href="https://link.springer.com/article/10.1186/s13059-025-03489-7" target="_blank" rel="noopener">SpatialLeiden</a>
-            <span class="desc">The spatial extension of the popular Leiden algorithm. Familiar and fast.</span>
-          </li>
-          <li>
-            <a href="https://www.nature.com/articles/s41588-023-01588-4" target="_blank" rel="noopener">CellCharter</a>
-            <span class="desc">A high-performing spatial clustering tool.</span>
-          </li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="resource-card" id="marton-olbei">
-      <div class="resource-head">
-        <div>
-          <h3>Dr Marton Olbei</h3>
-          <p class="resource-talk"><a href="speakers.html#marton-olbei">"Cytokine networks: a systems perspective on immune regulation"</a> · 28 April 2026</p>
+      <article class="resource-card-compact">
+        <h3>Dr Marton Olbei</h3>
+        <p class="resource-talk-compact"><a href="speakers.html#marton-olbei">"Cytokine networks"</a> · 28 April 2026</p>
+        <div class="resource-card-actions">
+          <a class="btn btn-primary btn-sm" href="assets/slides/marton-olbei.pdf" target="_blank" rel="noopener">Download slides</a>
+          <button type="button" class="btn btn-outline btn-sm" data-open-modal="materials-marton-olbei">See materials</button>
         </div>
-        <a class="btn btn-primary btn-sm" href="assets/slides/marton-olbei.pdf" target="_blank" rel="noopener">Download slides</a>
-      </div>
+      </article>
 
-      <div class="resource-section">
-        <h4>Recommended reading</h4>
-        <ul>
-          <li>
-            <a href="https://github.com/korcsmarosgroup/CytokineLink_pipeline" target="_blank" rel="noopener">CytokineLink pipeline</a>
-            <span class="desc">The pipeline used throughout the talk, on GitHub.</span>
-          </li>
-          <li>
-            <a href="https://www.science.org/doi/10.1126/scisignal.adt0986" target="_blank" rel="noopener">The corresponding paper</a>
-            <span class="desc">Published in Science Signaling.</span>
-          </li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="resource-card" id="claire-dunican">
-      <div class="resource-head">
-        <div>
-          <h3>Dr Claire Dunican</h3>
-          <p class="resource-talk"><a href="speakers.html#claire-dunican">"Predicting trajectories of acute illness using RNA velocity of whole blood"</a> · 3 March 2026</p>
+      <article class="resource-card-compact">
+        <h3>Dr Claire Dunican</h3>
+        <p class="resource-talk-compact"><a href="speakers.html#claire-dunican">"Predicting trajectories of acute illness"</a> · 3 March 2026</p>
+        <div class="resource-card-actions">
+          <a class="btn btn-primary btn-sm" href="assets/slides/claire-dunican.pdf" target="_blank" rel="noopener">Download slides</a>
+          <button type="button" class="btn btn-outline btn-sm" data-open-modal="materials-claire-dunican">See materials</button>
         </div>
-        <a class="btn btn-primary btn-sm" href="assets/slides/claire-dunican.pptx" target="_blank" rel="noopener">Download slides</a>
-      </div>
+      </article>
 
-      <div class="resource-section">
-        <h4>Recommended reading</h4>
-        <ul>
-          <li>
-            <a href="https://www.nature.com/articles/s41467-026-71685-5" target="_blank" rel="noopener">A paper relevant to the talk</a>
-            <span class="desc">Shared by Claire as further reading on RNA velocity.</span>
-          </li>
-        </ul>
-      </div>
-    </article>
-
+    </div>
   </div>
 </section>
+
+<dialog class="materials-modal" id="materials-naveed-ishaque">
+  <div class="modal-inner">
+    <div class="modal-head">
+      <div>
+        <h3>Dr Naveed Ishaque</h3>
+        <p class="resource-talk"><a href="speakers.html#naveed-ishaque">"Making sense of cells in space: challenges in interpreting spatial transcriptomics data"</a></p>
+      </div>
+      <button type="button" class="modal-close" data-close-modal aria-label="Close">✕</button>
+    </div>
+
+    <div class="resource-section">
+      <h4>Recommended reading</h4>
+      <ul>
+        <li>
+          <a href="https://www.nature.com/articles/s41592-023-02151-z" target="_blank" rel="noopener">Metrics reloaded</a>
+          <span class="desc">A review of how metrics should be used and interpreted. Not covered directly in the talk, but well worth reading.</span>
+        </li>
+        <li>
+          <a href="https://www.biorxiv.org/content/10.1101/2025.06.23.660861v2" target="_blank" rel="noopener">Beyond benchmarking</a>
+          <span class="desc">Naveed's group on the issues with methods, data, ground truths, and metrics when benchmarking spatial transcriptomics tools. Due to be peer-reviewed soon.</span>
+        </li>
+        <li>
+          <a href="https://arxiv.org/abs/2606.09675" target="_blank" rel="noopener">Challenges and prospects for cell segmentation in spatial transcriptomics</a>
+          <span class="desc">A perspectives piece on the current landscape of tools and open problems, and where the field is heading. Part of the Human Cell Atlas.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="resource-section">
+      <h4>Tools mentioned</h4>
+      <ul>
+        <li>
+          <a href="https://www.nature.com/articles/s41467-021-23807-4" target="_blank" rel="noopener">SSAM</a>
+          <span class="desc">An early cell-segmentation-free analysis tool that generates cell-type maps. Not fast enough for current technologies.</span>
+        </li>
+        <li>
+          <a href="https://sainsc.readthedocs.io/stable/" target="_blank" rel="noopener">Sainsc</a>
+          <span class="desc">An improved, faster cell-segmentation-free analysis tool from the same group.</span>
+        </li>
+        <li>
+          <a href="https://www.nature.com/articles/s41592-024-02415-2" target="_blank" rel="noopener">FICTURE</a>
+          <span class="desc">Another cell-segmentation-free tool, focused on gene expression programs and factors rather than cell typing.</span>
+        </li>
+        <li>
+          <a href="https://www.nature.com/articles/s41587-026-03004-8" target="_blank" rel="noopener">ovrl.py</a>
+          <span class="desc">Detects cell overlap signals (vertical doublets) in spatial transcriptomics data.</span>
+        </li>
+        <li>
+          <a href="https://www.nature.com/articles/s41588-025-02497-4" target="_blank" rel="noopener">CellAdMix</a>
+          <span class="desc">Identifies and corrects transcript misassignment.</span>
+        </li>
+        <li>
+          <a href="https://www.nature.com/articles/s41592-026-03089-8" target="_blank" rel="noopener">SPLIT</a>
+          <span class="desc">Improves transcript assignment to cells by resolving mixed signals.</span>
+        </li>
+        <li>
+          <a href="https://link.springer.com/article/10.1186/s13059-025-03489-7" target="_blank" rel="noopener">SpatialLeiden</a>
+          <span class="desc">The spatial extension of the popular Leiden algorithm. Familiar and fast.</span>
+        </li>
+        <li>
+          <a href="https://www.nature.com/articles/s41588-023-01588-4" target="_blank" rel="noopener">CellCharter</a>
+          <span class="desc">A high-performing spatial clustering tool.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="materials-modal" id="materials-marton-olbei">
+  <div class="modal-inner">
+    <div class="modal-head">
+      <div>
+        <h3>Dr Marton Olbei</h3>
+        <p class="resource-talk"><a href="speakers.html#marton-olbei">"Cytokine networks: a systems perspective on immune regulation"</a></p>
+      </div>
+      <button type="button" class="modal-close" data-close-modal aria-label="Close">✕</button>
+    </div>
+
+    <div class="resource-section">
+      <h4>Recommended reading</h4>
+      <ul>
+        <li>
+          <a href="https://github.com/korcsmarosgroup/CytokineLink_pipeline" target="_blank" rel="noopener">CytokineLink pipeline</a>
+          <span class="desc">The pipeline used throughout the talk, on GitHub.</span>
+        </li>
+        <li>
+          <a href="https://www.science.org/doi/10.1126/scisignal.adt0986" target="_blank" rel="noopener">The corresponding paper</a>
+          <span class="desc">Published in Science Signaling.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="materials-modal" id="materials-claire-dunican">
+  <div class="modal-inner">
+    <div class="modal-head">
+      <div>
+        <h3>Dr Claire Dunican</h3>
+        <p class="resource-talk"><a href="speakers.html#claire-dunican">"Predicting trajectories of acute illness using RNA velocity of whole blood"</a></p>
+      </div>
+      <button type="button" class="modal-close" data-close-modal aria-label="Close">✕</button>
+    </div>
+
+    <div class="resource-section">
+      <h4>Recommended reading</h4>
+      <ul>
+        <li>
+          <a href="https://www.nature.com/articles/s41467-026-71685-5" target="_blank" rel="noopener">A paper relevant to the talk</a>
+          <span class="desc">Shared by Claire as further reading on RNA velocity.</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</dialog>
 
 <footer class="site-footer" id="site-footer"></footer>
 <script src="js/main.js"></script>

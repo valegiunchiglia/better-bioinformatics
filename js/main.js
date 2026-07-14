@@ -83,6 +83,25 @@
     });
   });
 
+  // ---- Materials modals (resources.html) ----
+  document.querySelectorAll("[data-open-modal]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var dialog = document.getElementById(btn.getAttribute("data-open-modal"));
+      if (dialog) dialog.showModal();
+    });
+  });
+  document.querySelectorAll("[data-close-modal]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var dialog = btn.closest("dialog");
+      if (dialog) dialog.close();
+    });
+  });
+  document.querySelectorAll("dialog.materials-modal").forEach(function (dialog) {
+    dialog.addEventListener("click", function (e) {
+      if (e.target === dialog) dialog.close();
+    });
+  });
+
   // ---- Footer year ----
   document.querySelectorAll("[data-year]").forEach(function (el) {
     el.textContent = new Date().getFullYear();

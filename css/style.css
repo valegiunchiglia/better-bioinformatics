@@ -424,25 +424,54 @@ img { max-width: 100%; display: block; }
 .rec-pending { color: var(--ink-soft); font-size: 0.85rem; font-style: italic; }
 
 /* ---------- Resources ---------- */
-.resource-card {
+.resource-card-compact {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 30px 32px;
-  margin-bottom: 24px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
-.resource-head {
+.resource-card-compact h3 { margin-bottom: 2px; }
+.resource-talk-compact { color: var(--ink-soft); font-size: 0.9rem; margin: 0; }
+.resource-talk-compact a { color: var(--teal-700); font-weight: 500; }
+.resource-card-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: auto; padding-top: 4px; }
+
+dialog.materials-modal {
+  border: none;
+  border-radius: var(--radius);
+  padding: 0;
+  width: min(640px, 90vw);
+  max-height: 82vh;
+  box-shadow: var(--shadow-lg);
+}
+dialog.materials-modal::backdrop { background: rgba(27, 39, 64, 0.55); }
+.modal-inner { padding: 28px 30px; overflow-y: auto; max-height: 82vh; }
+.modal-head {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
   gap: 16px;
-  padding-bottom: 20px;
   margin-bottom: 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid var(--line);
 }
-.resource-head h3 { margin-bottom: 4px; }
-.resource-talk { color: var(--teal-700); font-weight: 500; margin: 0; max-width: 56ch; }
+.modal-head h3 { margin-bottom: 4px; }
+.modal-head .resource-talk { color: var(--teal-700); font-weight: 500; margin: 0; max-width: 44ch; font-size: 0.92rem; }
+.modal-close {
+  background: var(--teal-100);
+  border: none;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--ink);
+  flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+}
+.modal-close:hover { background: var(--accent-tint); color: var(--accent-dark); }
 .resource-section { margin-top: 22px; }
 .resource-section:first-of-type { margin-top: 0; }
 .resource-section h4 {
