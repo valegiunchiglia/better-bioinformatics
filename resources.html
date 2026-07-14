@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resources — Better Bioinformatics</title>
+<meta name="description" content="Slides, papers, and tools shared by Better Bioinformatics speakers after their talks.">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--
+  HOW TO ADD MATERIALS FOR A NEW TALK
+  1. Drop the slide file into assets/slides/ (name it <speaker-slug>.pdf or .pptx).
+  2. Copy one of the <article class="resource-card"> blocks below and update the
+     name, talk link, slides href, and the reading/tools lists.
+-->
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.svg" alt="">
+      <span class="brand-text">
+        <span class="brand-name">Better Bioinformatics</span>
+        <span class="brand-tag">Understand the why</span>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <li><a href="speakers.html">Speakers</a></li>
+      <li><a href="recordings.html">Recordings</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="organisers.html">Organisers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn btn-outline btn-sm" href="mailto:vg816@ic.ac.uk?subject=Proposing%20a%20talk%20for%20Better%20Bioinformatics">Propose a talk</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="eyebrow">Dig deeper</div>
+    <h1>Resources</h1>
+    <p>Slides, papers, and tools shared by speakers after their talks: everything you need to keep exploring a topic once the session ends.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div class="note-box">
+      Shared with each speaker's permission. Not every talk has materials up yet: some speakers are still sending things over, and we add them as they arrive.
+    </div>
+
+    <article class="resource-card" id="naveed-ishaque">
+      <div class="resource-head">
+        <div>
+          <h3>Dr Naveed Ishaque</h3>
+          <p class="resource-talk"><a href="speakers.html#naveed-ishaque">"Making sense of cells in space: challenges in interpreting spatial transcriptomics data"</a> · 7 July 2026</p>
+        </div>
+        <a class="btn btn-primary btn-sm" href="assets/slides/naveed-ishaque.pdf" target="_blank" rel="noopener">Download slides</a>
+      </div>
+
+      <div class="resource-section">
+        <h4>Recommended reading</h4>
+        <ul>
+          <li>
+            <a href="https://www.nature.com/articles/s41592-023-02151-z" target="_blank" rel="noopener">Metrics reloaded</a>
+            <span class="desc">A review of how metrics should be used and interpreted. Not covered directly in the talk, but well worth reading.</span>
+          </li>
+          <li>
+            <a href="https://www.biorxiv.org/content/10.1101/2025.06.23.660861v2" target="_blank" rel="noopener">Beyond benchmarking</a>
+            <span class="desc">Naveed's group on the issues with methods, data, ground truths, and metrics when benchmarking spatial transcriptomics tools. Due to be peer-reviewed soon.</span>
+          </li>
+          <li>
+            <a href="https://arxiv.org/abs/2606.09675" target="_blank" rel="noopener">Challenges and prospects for cell segmentation in spatial transcriptomics</a>
+            <span class="desc">A perspectives piece on the current landscape of tools and open problems, and where the field is heading. Part of the Human Cell Atlas.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="resource-section">
+        <h4>Tools mentioned</h4>
+        <ul>
+          <li>
+            <a href="https://www.nature.com/articles/s41467-021-23807-4" target="_blank" rel="noopener">SSAM</a>
+            <span class="desc">An early cell-segmentation-free analysis tool that generates cell-type maps. Not fast enough for current technologies.</span>
+          </li>
+          <li>
+            <a href="https://sainsc.readthedocs.io/stable/" target="_blank" rel="noopener">Sainsc</a>
+            <span class="desc">An improved, faster cell-segmentation-free analysis tool from the same group.</span>
+          </li>
+          <li>
+            <a href="https://www.nature.com/articles/s41592-024-02415-2" target="_blank" rel="noopener">FICTURE</a>
+            <span class="desc">Another cell-segmentation-free tool, focused on gene expression programs and factors rather than cell typing.</span>
+          </li>
+          <li>
+            <a href="https://www.nature.com/articles/s41587-026-03004-8" target="_blank" rel="noopener">ovrl.py</a>
+            <span class="desc">Detects cell overlap signals (vertical doublets) in spatial transcriptomics data.</span>
+          </li>
+          <li>
+            <a href="https://www.nature.com/articles/s41588-025-02497-4" target="_blank" rel="noopener">CellAdMix</a>
+            <span class="desc">Identifies and corrects transcript misassignment.</span>
+          </li>
+          <li>
+            <a href="https://www.nature.com/articles/s41592-026-03089-8" target="_blank" rel="noopener">SPLIT</a>
+            <span class="desc">Improves transcript assignment to cells by resolving mixed signals.</span>
+          </li>
+          <li>
+            <a href="https://link.springer.com/article/10.1186/s13059-025-03489-7" target="_blank" rel="noopener">SpatialLeiden</a>
+            <span class="desc">The spatial extension of the popular Leiden algorithm. Familiar and fast.</span>
+          </li>
+          <li>
+            <a href="https://www.nature.com/articles/s41588-023-01588-4" target="_blank" rel="noopener">CellCharter</a>
+            <span class="desc">A high-performing spatial clustering tool.</span>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="resource-card" id="marton-olbei">
+      <div class="resource-head">
+        <div>
+          <h3>Dr Marton Olbei</h3>
+          <p class="resource-talk"><a href="speakers.html#marton-olbei">"Cytokine networks: a systems perspective on immune regulation"</a> · 28 April 2026</p>
+        </div>
+        <a class="btn btn-primary btn-sm" href="assets/slides/marton-olbei.pdf" target="_blank" rel="noopener">Download slides</a>
+      </div>
+
+      <div class="resource-section">
+        <h4>Recommended reading</h4>
+        <ul>
+          <li>
+            <a href="https://github.com/korcsmarosgroup/CytokineLink_pipeline" target="_blank" rel="noopener">CytokineLink pipeline</a>
+            <span class="desc">The pipeline used throughout the talk, on GitHub.</span>
+          </li>
+          <li>
+            <a href="https://www.science.org/doi/10.1126/scisignal.adt0986" target="_blank" rel="noopener">The corresponding paper</a>
+            <span class="desc">Published in Science Signaling.</span>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="resource-card" id="claire-dunican">
+      <div class="resource-head">
+        <div>
+          <h3>Dr Claire Dunican</h3>
+          <p class="resource-talk"><a href="speakers.html#claire-dunican">"Predicting trajectories of acute illness using RNA velocity of whole blood"</a> · 3 March 2026</p>
+        </div>
+        <a class="btn btn-primary btn-sm" href="assets/slides/claire-dunican.pptx" target="_blank" rel="noopener">Download slides</a>
+      </div>
+
+      <div class="resource-section">
+        <h4>Recommended reading</h4>
+        <ul>
+          <li>
+            <a href="https://www.nature.com/articles/s41467-026-71685-5" target="_blank" rel="noopener">A paper relevant to the talk</a>
+            <span class="desc">Shared by Claire as further reading on RNA velocity.</span>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<footer class="site-footer" id="site-footer"></footer>
+<script src="js/main.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>

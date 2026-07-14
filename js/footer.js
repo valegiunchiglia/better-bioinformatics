@@ -18,6 +18,7 @@
     + '        <li><a href="schedule.html">Schedule</a></li>'
     + '        <li><a href="speakers.html">Speakers</a></li>'
     + '        <li><a href="recordings.html">Recordings</a></li>'
+    + '        <li><a href="resources.html">Resources</a></li>'
     + '      </ul>'
     + '    </div>'
     + '    <div>'
