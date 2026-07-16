@@ -245,6 +245,7 @@ img { max-width: 100%; display: block; }
 .hero-card .meta { color: var(--teal-300); font-size: 0.92rem; margin-bottom: 14px; }
 .hero-card .who { display: flex; align-items: center; gap: 12px; margin: 16px 0; }
 .hero-card .who img, .hero-card .who .avatar-fallback { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.hero-card .who .avatar-fallback { background: var(--teal-700); font-size: 1rem; }
 .hero-card .who-name { font-weight: 600; }
 .hero-card .who-role { font-size: 0.85rem; color: var(--teal-300); }
 .hero-card .actions { display: flex; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
