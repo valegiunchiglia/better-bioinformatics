@@ -419,6 +419,10 @@ img { max-width: 100%; display: block; }
   color: #fff;
   font-size: 1.3rem;
 }
+a.rec-thumb { overflow: hidden; }
+a.rec-thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+a.rec-thumb .play { position: relative; background: rgba(0,0,0,0.55); transition: background 0.15s; }
+a.rec-thumb:hover .play { background: var(--teal-500); }
 .rec-body { padding: 18px 20px 22px; flex: 1; display: flex; flex-direction: column; }
 .rec-body h3 { font-size: 1.02rem; margin-bottom: 4px; }
 .rec-body .rec-meta { color: var(--ink-soft); font-size: 0.85rem; margin-bottom: 14px; }
